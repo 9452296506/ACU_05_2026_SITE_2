@@ -5,7 +5,7 @@ Jednoproduktowa strona docelowa (landing page) zrealizowana w ramach projektu **
 
 ## Opis
 
-Statyczna, w pełni responsywna strona marketingowa dla produktu z kategorii pielęgnacji włosów (biokompleks Bionetic), zlokalizowana dla rynku łotewskiego. Wykonana jako autorska, jednostronnicowa witryna z modułowymi arkuszami stylów i modułowym kodem JavaScript — bez frameworków i bez procesu budowania.
+Statyczna i responsywna strona marketingowa dla produktu z kategorii pielęgnacji włosów (biokompleks Bionetic), zlokalizowana dla rynku łotewskiego.
 
 ## Technologie
 
