@@ -59,7 +59,7 @@ Single-product marketing landing page delivered as part of project **ACU_05_2026
 
 ## Overview
 
-A static, fully responsive landing page for a hair-care product (Bionetic biocomplex), localized for the Latvian market. Built as a hand-crafted single-page website with modular stylesheets and modular JavaScript — no frameworks, no build pipeline.
+A static, fully responsive landing page for a hair-care product (Bionetic biocomplex), localized for the Latvian market.
 
 ## Technologies
 
