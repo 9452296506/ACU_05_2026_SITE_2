@@ -1,176 +1,105 @@
-ACU_05_2026_SITE_2 — Strona Bionetic
+📄 Polish version:
+# ACU_05_2026_SITE_2 — Strona docelowa Bionetic
+
+Jednoproduktowa strona docelowa (landing page) zrealizowana w ramach projektu **ACU_05_2026_SITE_2**.
+
+## Opis
+
+Statyczna, w pełni responsywna strona marketingowa dla produktu z kategorii pielęgnacji włosów (biokompleks Bionetic), zlokalizowana dla rynku łotewskiego. Wykonana jako autorska, jednostronnicowa witryna z modułowymi arkuszami stylów i modułowym kodem JavaScript — bez frameworków i bez procesu budowania.
+
+## Technologie
+
+- **HTML5** — znaczniki semantyczne, dane strukturalne JSON-LD (`LocalBusiness`)
+- **CSS3** — zmienne CSS, Flexbox, CSS Grid, responsywne media queries
+- **JavaScript (czysty)** — bez frameworków, wzorzec modułowy IIFE
+- **Google Fonts** (Cormorant Garamond + Inter) oraz **Font Awesome** z CDN
+- **Zasoby graficzne** — `.jpg`, `.webp`, `.png`
+
+## Funkcjonalności
+
+- Przyklejony nagłówek z wyszukiwarką, kontem oraz wysuwanym koszykiem
+- Sekcja hero, historia marki, składniki, krok po kroku, opinie, FAQ
+- Sekcja galerii w stylu UGC / Instagram
+- Newsletter oraz formularz kontaktowy z walidacją po stronie klienta
+- Strony polityk: Prywatność, Regulamin, Dostawa, Zwroty (pełnoekranowe modale)
+- Banner cookie z zapamiętywaniem w `localStorage`
+- Koszyk zakupowy z zapamiętywaniem w `localStorage`
+
+## Status projektu
+
+| Element | Status |
+|---------|--------|
+| Projekt graficzny i układ | ✅ Zakończone |
+| Testy w różnych przeglądarkach | ✅ Zakończone |
+| Adaptacja mobile / tablet | ✅ Zakończone |
+| Dostawa do klienta | ✅ Zakończone |
+
+## Repozytoria
+
+Projekt korzysta z modelu dostawy opartego o dwa repozytoria:
+
+- **Publiczne (to repozytorium)** — dowód dostawy, zrzuty ekranu, dokumentacja
+- **Prywatne** [`ACU_05_2026_SITE_2_CODE`](https://github.com/9452296506/ACU_05_2026_SITE_2_CODE.git) — produkcyjny kod źródłowy; dostęp udzielany bezpośrednio klientowi
+
+Szczegóły dotyczące dostawy, polityki repozytoriów i wdrożenia znajdują się w pliku [`DELIVERY.md`](./DELIVERY.md).
+Historia zmian znajduje się w pliku [`CHANGELOG.md`](./CHANGELOG.md).
+
+## Licencja
+
+Wszystkie elementy dostawy zostają przekazane klientowi zgodnie z zawartą umową. Dostęp do prywatnego repozytorium z kodem źródłowym regulowany jest tą umową.
 
 ---
 
-## 🇵🇱 Wersja polska
-
-### Opis projektu
-
-Statyczna strona docelowa (landing page) marki **Bionetic** — biokompleks do
-pielęgnacji włosów, sprzedawany na rynku łotewskim.
-
-Strona w całości w języku łotewskim. Treść, ceny i adresy dostosowane do
-rynku Łotwy (Origo, Ryga).
-
-### Specyfikacja techniczna
-
-| Element             | Wartość                                                    |
-|---------------------|------------------------------------------------------------|
-| Język interfejsu    | Łotewski (`lang="lv"`)                                     |
-| Stos technologiczny | HTML5, CSS3 (custom properties, Grid, Flexbox), vanilla JS |
-| Typografia          | Fraunces (serif) + DM Sans (sans)                          |
-| Paleta              | Sage green (`#3f5240`) + Clay terracotta (`#c97b63`)       |
-| Ikony               | Font Awesome 6.5.1 (CDN)                                   |
-| Wymagania serwera   | Brak — statyczne pliki                                     |
-
-### Funkcjonalność
-
-- Sticky header z efektem scroll
-- Menu mobilne (szuflada boczna)
-- Koszyk z trwałym `localStorage` (`bionetic_cart_v2`)
-- Modal wyszukiwania z filtrowaniem
-- Modal konta (logowanie / rejestracja, demo)
-- Akordeon FAQ
-- Pełnoekranowe polityki (Privacy, Terms, Delivery, Refund) z routingiem URL (`?page=...`)
-- Walidacja formularza kontaktowego (JS)
-- Formularz newslettera
-- Baner cookie z trwałą zgodą (`bionetic_cookie_ok_v2`)
-- Sekcja porównawcza (Salon vs Bionetic)
-- Sekcja "4 tygodnie z produktem"
-
-### SEO
-
-- Meta description, canonical, OpenGraph
-- JSON-LD `LocalBusiness` z adresem Origo
-- Semantyczny HTML, atrybuty `alt` na obrazach
-- `theme-color` dla mobilnych przeglądarek
-
-### Struktura katalogu
-
-```
-├── index.html
-├── css/
-│   ├── base.css         (tokeny, reset, typografia, przyciski)
-│   ├── components.css   (header, footer, modal, drawer, formularze, polityki)
-│   └── sections.css     (hero, trust, produkt, benefity, składniki, how,
-│                         founder, compare, reviews, experience, faq,
-│                         contact, newsletter, responsive)
-└── js/
-    ├── cart.js          (koszyk + publiczne API window.BioneticCart)
-    ├── ui.js            (header, menu, modale, FAQ, polityki, cookies, Esc)
-    └── main.js          (search, walidacja kontaktu, newsletter, konto demo)
-```
-
-### Uruchomienie lokalne
-
-To statyczna strona — wystarczy otworzyć `index.html` w przeglądarce lub
-serwować dowolnym serwerem statycznym
+📄 English version: [`README.md`](./README.md)
 
 
-### Responsywność
+# ACU_05_2026_SITE_2 — Bionetic Landing Page
 
-Punkty graniczne: **1024 px**, **768 px**, **480 px**. Strona została
-zweryfikowana na typowych szerokościach mobile (360 px+), tablet i desktop.
+Single-product marketing landing page delivered as part of project **ACU_05_2026_SITE_2**.
 
-### Status projektu
+## Overview
 
-✅ **Wersja 1.0.0 — gotowa do wdrożenia produkcyjnego.**
+A static, fully responsive landing page for a hair-care product (Bionetic biocomplex), localized for the Latvian market. Built as a hand-crafted single-page website with modular stylesheets and modular JavaScript — no frameworks, no build pipeline.
 
-### Polityka repozytorium
+## Technologies
 
-Niniejsze repozytorium publiczne zawiera **wyłącznie dokumentację oraz
-zrzuty ekranu** mające potwierdzić wykonanie zlecenia (do celów rozliczeniowych
-i podatkowych JDG).
+- **HTML5** — semantic markup, structured data (JSON-LD `LocalBusiness`)
+- **CSS3** — custom properties, Flexbox, CSS Grid, responsive media queries
+- **JavaScript (vanilla)** — no frameworks, modular IIFE pattern
+- **Google Fonts** (Cormorant Garamond + Inter) and **Font Awesome** via CDN
+- **Image assets** — `.jpg`, `.webp`, `.png`
 
-Kompletny kod źródłowy znajduje się w **prywatnym repozytorium**, do którego
-zleceniodawca otrzymuje bezpośredni dostęp w ramach przekazania projektu.
-Szczegóły — w pliku `DELIVERY.md`.
+## Features
+
+- Sticky header with search, account and cart drawer
+- Hero section, brand story, ingredients, step-by-step usage, testimonials, FAQ
+- UGC/Instagram-style gallery section
+- Newsletter subscription and contact form with client-side validation
+- Privacy, Terms, Delivery and Refund policy pages (modal/fullscreen overlays)
+- Cookie banner with `localStorage` persistence
+- Shopping cart with `localStorage` persistence
+
+## Project status
+
+| Item | Status |
+|------|--------|
+| Design & layout | ✅ Completed |
+| Cross-browser testing | ✅ Completed |
+| Mobile / tablet adaptation | ✅ Completed |
+| Delivery to client | ✅ Completed |
+
+## Repositories
+
+This project uses a two-repository delivery model:
+
+- **Public (this repository)** — delivery proof, screenshots, project documentation
+- **Private** [`ACU_05_2026_SITE_2_CODE`](https://github.com/9452296506/ACU_05_2026_SITE_2_CODE.git) — production source code; access granted directly to the client
+
+For full delivery details, repository policy and deployment information, see [`DELIVERY.md`](./DELIVERY.md).
+For version history, see [`CHANGELOG.md`](./CHANGELOG.md).
+
+## License
+
+All deliverables are transferred to the client in accordance with the agreed contract. Access to the private source code repository is governed by that contract.
 
 ---
-
-## 🇬🇧 English version
-
-### Project overview
-
-A static landing page for the **Bionetic** brand — a biocomplex for hair care,
-sold on the Latvian market. Variant **2** is an alternative visual treatment of
-the same brand: a different color palette, different section layout and
-different typography than variant 1.
-
-The page is fully in Latvian. All content, prices and addresses are tailored
-to the Latvian market (Origo, Riga).
-
-### Technical specification
-
-| Item             | Value                                                          |
-|------------------|----------------------------------------------------------------|
-| Interface lang   | Latvian (`lang="lv"`)                                          |
-| Stack            | HTML5, CSS3 (custom properties, Grid, Flexbox), vanilla JS     |
-| Typography       | Fraunces (serif) + DM Sans (sans)                              |
-| Palette          | Sage green (`#3f5240`) + Clay terracotta (`#c97b63`)           |
-| Icons            | Font Awesome 6.5.1 (CDN)                                       |
-| Server reqs      | None — static files                                            |
-
-### Functionality
-
-- Sticky header with scroll behavior
-- Mobile menu (slide-out drawer)
-- Cart persisted in `localStorage` (`bionetic_cart_v2`)
-- Search modal with filtering
-- Account modal (login / register, demo)
-- FAQ accordion
-- Fullscreen policy overlays (Privacy, Terms, Delivery, Refund) with URL routing (`?page=...`)
-- Contact form validation (JS)
-- Newsletter form
-- Cookie banner with persistent consent (`bionetic_cookie_ok_v2`)
-- Comparison section (Salon vs Bionetic)
-- "4-week experience" section
-
-### SEO
-
-- Meta description, canonical, OpenGraph
-- JSON-LD `LocalBusiness` with Origo address
-- Semantic HTML, `alt` on all images
-- `theme-color` for mobile browsers
-
-### Directory structure
-
-```
-site2/
-├── index.html
-├── css/
-│   ├── base.css         (tokens, reset, typography, buttons)
-│   ├── components.css   (header, footer, modal, drawer, forms, policy)
-│   └── sections.css     (hero, trust, product, benefits, ingredients, how,
-│                         founder, compare, reviews, experience, faq,
-│                         contact, newsletter, responsive)
-└── js/
-    ├── cart.js          (cart + public window.BioneticCart API)
-    ├── ui.js            (header, menu, modals, FAQ, policies, cookies, Esc)
-    └── main.js          (search, contact validation, newsletter, account demo)
-```
-
-### Running locally
-
-This is a static page — open `index.html` directly or serve it with any
-static server
-
-
-### Responsiveness
-
-Breakpoints: **1024 px**, **768 px**, **480 px**. Verified across typical
-mobile (360 px+), tablet and desktop widths.
-
-### Project status
-
-✅ **Version 1.0.0 — production ready.**
-
-### Repository policy
-
-This public repository contains **only documentation and screenshots** that
-prove the work was completed (used for invoicing and tax-reporting purposes
-of the contractor's sole-proprietorship).
-
-The complete source code lives in a **private repository** to which the client
-receives direct access as part of project delivery. See `DELIVERY.md` for
-details.
